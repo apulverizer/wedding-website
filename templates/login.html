@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aaron & Dawn 2017</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static',filename='css/theme.css')}}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{{ url_for('static',filename='font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    
+
+</head>
+
+<body id="page-top" data-spy="scroll" class="login-body">
+    
+    <div class="login-page">
+      <div class="form">
+        <form class="login-form" method="post">
+          <h4>Please enter the password to continue to Dawn and Aaron's wedding website.</h4>
+          <input type="password" class="form-input" name="id" placeholder="password"/>
+          <input type="submit" class="submit-button" value="Login">
+          <p class="message">
+          {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                  {{ message }}
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static',filename='js/jquery.js')}}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js')}}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ url_for('static',filename='js/theme.js')}}"></script>
+
+</body>
+
+</html>
