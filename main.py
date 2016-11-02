@@ -1,5 +1,6 @@
 """`main` is the top level module for your Flask application."""
 from datetime import timedelta
+import os
 # Import the Flask Framework
 from flask import Flask, Response, redirect, url_for, request, session, abort, render_template, flash
 from flask.ext.login import LoginManager, UserMixin, login_required, login_user, logout_user 
@@ -8,7 +9,8 @@ from flask.ext.login import LoginManager, UserMixin, login_required, login_user,
 app = Flask(__name__)
 app.config.update(
     DEBUG = False,
-    SECRET_KEY = 'wedding_website_secret_key'
+    SECRET_KEY = 'wedding_website_secret_key',
+    TEMPLATES_AUTO_RELOAD = True
 )
 
 # Configure login manager

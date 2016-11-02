@@ -406,8 +406,8 @@ img::-moz-selection {
 }
 
 .img-round {
-  -webkit-clip-path: circle(50% at center);
-  clip-path: circle(50% at center);
+  -webkit-clip-path: circle(45% at center);
+  clip-path: circle(45% at center);
   display: block;
   margin: auto;
 }
@@ -428,8 +428,8 @@ img::-moz-selection {
 
 @media(min-width:769px) {
     .img-round {
-        -webkit-clip-path: circle(50% at center);
-        clip-path: circle(50% at center);
+        -webkit-clip-path: circle(45% at center);
+        clip-path: circle(45% at center);
     }
 
     .img-round-small {
@@ -545,4 +545,18 @@ table.tableizer-table {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
+}
+
+.extra-top-margin {
+    margin-top: 100px;
+}
+.h-speaker{
+    margin-bottom:0px;
+    margin-top: 5px;
+}
+.h-coming-soon{
+    color: #ff7800;
+}
+.center-text{
+    text-align:center;
 }
