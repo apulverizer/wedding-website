@@ -533,6 +533,10 @@ table.tableizer-table {
   text-decoration: none;
 }
 
+.medium-text {
+    font-size: 18px;
+}
+
 .login-body {
 /*   background: #76b852;
   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
@@ -556,6 +560,19 @@ table.tableizer-table {
 }
 .h-coming-soon{
     color: #ff7800;
+}
+.row-events-header {
+    height:50px;
+    padding: 5px;
+}
+.row-events-text {
+    margin-bottom: 10px;
+}
+.row-events-header [class^='col-md'] {
+    height: 100%;
+}
+.faq-text h5 {
+    text-align: justify;
 }
 .center-text{
     text-align:center;
